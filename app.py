@@ -33,7 +33,7 @@ B = st.slider('B', min_value=0, max_value=255, step=1)
 import cv2
 from  PIL import Image, ImageOps
 def import_and_predict():
-  img_data = np.zeros((100,100,3), np.uint8)
+  image_data = np.zeros((100,100,3), np.uint8)
 	   
   image_data[:] = [R,G,B]
   st.image(image_data, use_column_width=True)
